@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Please rate the importance of the following issues to you"
+        android:id="@+id/textView"
+        android:layout_weight="0.04" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_weight="0.55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Women’s \nRights"
+                android:id="@+id/textView" />
+
+            <RadioButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Least"
+                android:id="@+id/radioButtonWomen1"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less"
+                android:id="@+id/radioButtonWomen2"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Somewhat"
+                android:id="@+id/radioButtonWomen3"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:id="@+id/radioButtonWomen4"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most"
+                android:id="@+id/radioButtonWomen5"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_weight="0.55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:onClick="onRadioButtonClicked"
+                android:text="Civil \nRights"
+                android:id="@+id/textView2" />
+
+            <RadioButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Least"
+                android:id="@+id/radioButtonCivil1"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less"
+                android:id="@+id/radioButtonCivil2"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Somewhat"
+                android:id="@+id/radioButtonCivil3"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:id="@+id/radioButtonCivil4"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most"
+                android:id="@+id/radioButtonCivil5"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="LGBT \nRights"
+                android:id="@+id/textView2" />
+
+            <RadioButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Least"
+                android:id="@+id/radioButtonLGBT1"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less"
+                android:id="@+id/radioButtonLGBT2"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Somewhat"
+                android:id="@+id/radioButtonLGBT3"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:id="@+id/radioButtonLGBT4"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most"
+                android:id="@+id/radioButtonLGBT5"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_weight="0.55" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Education \nRights"
+
+                android:id="@+id/textView5" />
+
+            <RadioButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Least"
+                android:id="@+id/radioButtonEdu1"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less"
+                android:id="@+id/radioButtonEdu2"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Somewhat"
+                android:id="@+id/radioButtonEdu3"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:id="@+id/radioButtonEdu4"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most"
+                android:id="@+id/radioButtonEdu5"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_weight="0.55" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Minority \nRights"
+                android:id="@+id/textView6" />
+
+            <RadioButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Least"
+                android:id="@+id/radioButtonMin1"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less"
+                android:id="@+id/radioButtonMin2"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Somewhat"
+                android:id="@+id/radioButtonMin3"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:id="@+id/radioButtonMin4"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most"
+                android:id="@+id/radioButtonMin5"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_gravity="right" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Immigrants \nRights"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/textView7" />
+
+            <RadioButton
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Least"
+                android:id="@+id/radioButtonImm1"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less"
+                android:id="@+id/radioButtonImm2"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Somewhat"
+                android:id="@+id/radioButtonImm3"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:id="@+id/radioButtonImm4"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most"
+                android:id="@+id/radioButtonImm5"
+                android:onClick="onRadioButtonClicked"
+                android:checked="false" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next OR Proceed With Most Recent Preferences"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+
+</LinearLayout>
